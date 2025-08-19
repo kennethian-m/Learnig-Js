@@ -74,7 +74,7 @@ easy way
     username=document.getElementById('myText').value;
     document.getElementById('myH1').textContent = `Hello ${username}`;
 
- };*/
+ };
    
  //type conversion=  is the change of data type o another(string, number, boolean)
 
@@ -85,3 +85,86 @@ easy way
  age ++;
 
  console.log(`Happy Birthday you are now ${age} old`);
+ 
+
+ let x;
+ let y;
+ let z;
+
+
+ x=String("12.2");
+ y=Number(15);
+ z=Boolean('pizza');
+
+ console.log(x, typeof x);
+ console.log(y, typeof y);
+ console.log(z, typeof z);
+ 
+//const is a variable that can not be changed
+
+const PI = 3.14159
+
+let radious;
+let circumference;
+
+radious=window.prompt('enter the radious of the circle');
+
+circumference = 2*PI*radious
+
+console.log(`the circumference is ${circumference} `)
+//or
+console.log('the circumference is', circumference);
+
+//Math
+let x = 3.14;
+let y= 5;
+let z= 9;
+let maxmum;
+let minmum;
+
+//x = Math.round(x) roundsoff the number
+//x=Math.floor(x); reduces decimal lower
+//x = Math.ceil(x); //rounds off to upper
+//x = Math.pow(x, 2); //gives power to number
+//x = Math.sqrt(x); //gives squar root
+//x = Math.abs(x); //gives an absolute value
+maxmum = Math.max(x,y,z);
+minmum = Math.min(z, x);
+
+
+
+console.log(x);
+console.log(maxmum);
+console.log(minmum);
+
+ //creating a squar root programm
+ 
+ let a;
+ let b;
+ let c;
+
+ a=window.prompt("input the value of a");
+ a=Number(a);
+ b=window.prompt("input the value of b")
+ b=Number(b);
+
+ c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+ console.log(c);
+*/
+
+let a;
+ let b;
+ let c;
+
+ document.getElementById('submit').onclick = function(){
+
+    a=document.getElementById('aText').value
+    a=Number(a);
+
+    b=document.getElementById('bText').value
+    b=Number(b);
+
+    c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+    
+    document.getElementById('sideC').innerHTML = 'Side E:' + c;
+ };
