@@ -150,7 +150,7 @@ console.log(minmum);
 
  c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
  console.log(c);
-*/
+
 
 let a;
  let b;
@@ -168,3 +168,45 @@ let a;
     
     document.getElementById('sideC').innerHTML = 'Side E:' + c;
  };
+ 
+  let count = 0;
+ document.getElementById('decrease').onclick = function() {
+   count -=1;
+   document.getElementById('answer').innerHTML = count;
+
+ };
+ document.getElementById('rest').onclick = function() {
+   count = 0;
+   document.getElementById('answer').innerHTML = count;
+ }
+ document.getElementById('increase').onclick = function() {
+   count +=1;
+   document.getElementById('answer').innerHTML = count;
+
+ };
+
+ let x =Math.random();
+
+ console.log(x);
+ 
+let userName = 'makabuli Ian';
+let phoneNumber = '070-123-4567';
+
+console.log(userName.length);
+console.log(userName.charAt);
+console.log(userName.toUpperCase());
+console.log(userName.toLowerCase());
+console.log(userName.indexOf('Ian')); 
+console.log(userName.lastIndexOf('Ian'));
+*/
+let time =20;
+
+if(time <12){
+    console.log('good morning');
+};
+if(time >=12 && time <18){
+    console.log('good afternoon');
+}
+else{
+    console.log('good evening');
+}
