@@ -198,7 +198,7 @@ console.log(userName.toUpperCase());
 console.log(userName.toLowerCase());
 console.log(userName.indexOf('Ian')); 
 console.log(userName.lastIndexOf('Ian'));
-*/
+
 let time =20;
 
 if(time <12){
@@ -210,3 +210,21 @@ if(time >=12 && time <18){
 else{
     console.log('good evening');
 }
+
+let username = 'ian';
+let phoneNumber = '070-123-4567';
+
+console.log(username.length);
+
+phoneNumber = phoneNumber.replaceAll('-', '/');
+console.log(phoneNumber)
+*/
+
+fullName = 'kenneth ian makabuli';
+//firstName = fullName.slice(0,7);
+//lastName = fullName.slice(8);
+lastName = fullName.slice(fullName.indexOf(' ')+1);
+firstName = fullName.slice(0, fullName.indexOf(' '));
+
+console.log(firstName);
+console.log(lastName);
