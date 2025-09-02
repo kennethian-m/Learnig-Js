@@ -218,7 +218,7 @@ console.log(username.length);
 
 phoneNumber = phoneNumber.replaceAll('-', '/');
 console.log(phoneNumber)
-*/
+
 
 fullName = 'kenneth ian makabuli';
 //firstName = fullName.slice(0,7);
@@ -228,3 +228,43 @@ firstName = fullName.slice(0, fullName.indexOf(' '));
 
 console.log(firstName);
 console.log(lastName);
+
+method changing
+
+let userName = 'ian';
+
+letter = userName.charAt(0).toUpperCase();
+
+console.log(letter);
+
+ using checkbox and radio buttons
+*/
+
+document.getElementById('myCheck').onclick = function(){
+
+  const check= document.getElementById('check');
+  const payPal =document.getElementById('payPal');
+  const machant =document.getElementById('machant');
+  const visaCard =document.getElementById('visaCard');
+
+  if(check.checked){
+    console.log('You are subscribed');
+
+  }
+  else{
+    console.log('You are not subscribed');
+    
+  }
+  if(payPal.checked){
+    console.log('you are using paypal for payment')
+  }
+  else if (machant.checked){
+    console.log('you are using machant for payment')
+  }
+  else if (visaCard.checked){
+    console.log('you are using visacard for payment')
+  }
+  else{
+    console.log('please select a payment method')
+  }
+}
